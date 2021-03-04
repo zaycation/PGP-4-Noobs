@@ -2,12 +2,12 @@ import React from "react";
 
 const Install = () => {
   return (
-    <div  className="p-1">
+    <div className="p-1">
       <h4>Downloading PGP</h4>
       <ol>
         <li>
-          In your browser, go to the download center at the PGP International
-          Homepage
+          In your browser, go to the download center at the{" "}
+          <a href="http://www.pgpi.didisoft.com/">PGP International Homepage</a>
         </li>
         <li>
           Click on the PGP Freeware link where it says: "Here you may download

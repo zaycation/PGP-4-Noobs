@@ -153,12 +153,15 @@ const HomeScreen = () => {
           </Col>
           <Col sm={12} md={9}>
             <div className="right__section">
-              <br />
-              <h3 className="my-5">PGP 4 Noobs</h3>
-              <p>
-                Click any of the sections in the Table of Contents to get
-                started u noob!
-              </p>
+              <div className="header__section">
+                <br />
+
+                <h3 className="my-5">PGP 4 Noobs</h3>
+                <p>
+                  Click any of the sections in the Table of Contents to get
+                  started u noob!
+                </p>
+              </div>
               {/*section === "toc" && <Toc />*/}
               {section === "intro" && <Intro />}
               {section === "history" && <History />}
