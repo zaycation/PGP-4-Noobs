@@ -93,10 +93,18 @@ const Personal = () => {
             from the pop-up menu.
           </li>
         </ol>
-<p>
-    
-</p>
-
+        <p>
+          You can also encrypt and decrypt the entire contents of a folder by
+          simply right clicking on the folder and selecting Encrypt from the PGP
+          sub menu. But this is not as convenient as opening the folder first
+          and selecting the files as a list before encrypting them since, after
+          PGP has finished the encryption process, you'll have to delete the
+          original files one by one.
+        </p>
+        <p>
+          Deleting files on your disks raises another issue, which you can learn
+          about in the next section...
+        </p>
       </div>
     </>
   );

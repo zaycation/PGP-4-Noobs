@@ -11,13 +11,24 @@ import {
 const MainNavbar = () => {
   return (
     <>
-      <Navbar bg="primary" variant="dark" expand="lg">
-        <Navbar.Brand href="#home">PGP 4 Noobs</Navbar.Brand>
+      <Navbar
+        bg="primary"
+        variant="dark"
+        expand="lg"
+        fixed="top"
+        className="mainnav"
+        style={{ top: "0" }}
+      >
+        <Navbar.Brand href="/">PGP 4 Noobs</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Discord</Nav.Link>
+            <Nav.Link href="https://discord.gg/ZFvXwMUjjh">
+              Join Our Discord!
+            </Nav.Link>
+            <Nav.Link href="https://discord.gg/ZFvXwMUjjh">
+              Donate to the Devs
+            </Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

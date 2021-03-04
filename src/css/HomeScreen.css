@@ -1,5 +1,5 @@
 .nav__options {
-  min-height: 80vh;
+  height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,5 +18,9 @@
 h6:hover {
   cursor: -webkit-grab;
   cursor: grab;
+}
+
+.right__section {
+  overflow-x: hidden !important;
 }
 /*# sourceMappingURL=HomeScreen.css.map */

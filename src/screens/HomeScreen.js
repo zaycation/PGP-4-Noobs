@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import Toc from "../components/Toc";
+//import Toc from "../components/Toc";
+import MainNavbar from "../components/MainNavbar";
 import Intro from "../components/Intro";
 import History from "../components/History";
 import Install from "../components/Install";
@@ -11,6 +12,10 @@ import Using from "../components/Using";
 import Emails from "../components/Emails";
 import Unencrypted from "../components/Unencrypted";
 import Else from "../components/Else";
+import Personal from "../components/Personal";
+import Wipe from "../components/Wipe";
+import Options from "../components/Options";
+import Acknowledgements from "../components/Acknowledgements";
 
 import "../css/HomeScreen.css";
 
@@ -19,10 +24,18 @@ const HomeScreen = () => {
 
   return (
     <>
+      <Container
+        fluid={true}
+        className="fluid-container"
+        style={{ height: "100%" }}
+      >
+        <MainNavbar />
+      </Container>
       <Container fluid={true}>
         <Row>
           <Col sm={12} md={3}>
-            <div className="nav__options">
+            <div className="nav__options position-sm-static position-md-fixed my-5">
+              {/*
               <h6
                 className="font-weight-bold"
                 onClick={() => {
@@ -31,6 +44,7 @@ const HomeScreen = () => {
               >
                 Table of Contents
               </h6>
+                */}
               <h6
                 className="font-weight-bold"
                 onClick={() => {
@@ -114,7 +128,7 @@ const HomeScreen = () => {
               <h6
                 className="font-weight-bold"
                 onClick={() => {
-                  setSection("investing");
+                  setSection("wipe");
                 }}
               >
                 9) Using PGP to Wipe files from your disks
@@ -122,7 +136,7 @@ const HomeScreen = () => {
               <h6
                 className="font-weight-bold"
                 onClick={() => {
-                  setSection("investing");
+                  setSection("options");
                 }}
               >
                 10) Useful PGP Options you should know about
@@ -130,7 +144,7 @@ const HomeScreen = () => {
               <h6
                 className="font-weight-bold"
                 onClick={() => {
-                  setSection("investing");
+                  setSection("ack");
                 }}
               >
                 Acknowledgements
@@ -138,8 +152,11 @@ const HomeScreen = () => {
             </div>
           </Col>
           <Col sm={12} md={9}>
-            <h3>PGP 4 Noobs</h3>
-            {section === "toc" && <Toc />}
+            <div className="right__section">
+
+            <br />
+            <h3 className="my-5">PGP 4 Noobs</h3>
+            {/*section === "toc" && <Toc />*/}
             {section === "intro" && <Intro />}
             {section === "history" && <History />}
             {section === "install" && <Install />}
@@ -149,6 +166,11 @@ const HomeScreen = () => {
             {section === "emails" && <Emails />}
             {section === "unencrypted" && <Unencrypted />}
             {section === "else" && <Else />}
+            {section === "personal" && <Personal />}
+            {section === "wipe" && <Wipe />}
+            {section === "options" && <Options />}
+            {section === "ack" && <Acknowledgements />}
+            </div>
           </Col>
         </Row>
       </Container>
