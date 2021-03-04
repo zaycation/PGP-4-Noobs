@@ -8,6 +8,9 @@ import Install from "../components/Install";
 import Create from "../components/Create";
 import Changing from "../components/Changing";
 import Using from "../components/Using";
+import Emails from "../components/Emails";
+import Unencrypted from "../components/Unencrypted";
+import Else from "../components/Else";
 
 import "../css/HomeScreen.css";
 
@@ -87,7 +90,7 @@ const HomeScreen = () => {
               <h6
                 className="font-weight-bold"
                 onClick={() => {
-                  setSection("investing");
+                  setSection("unencrypted");
                 }}
               >
                 6) PGP Signing Your Unencrypted E-mails
@@ -95,7 +98,7 @@ const HomeScreen = () => {
               <h6
                 className="font-weight-bold"
                 onClick={() => {
-                  setSection("investing");
+                  setSection("else");
                 }}
               >
                 7) Signing Someone Else's Public Key
@@ -103,7 +106,7 @@ const HomeScreen = () => {
               <h6
                 className="font-weight-bold"
                 onClick={() => {
-                  setSection("investing");
+                  setSection("personal");
                 }}
               >
                 8) Using PGP to Encrypt Your Personal Docs
@@ -143,6 +146,9 @@ const HomeScreen = () => {
             {section === "create" && <Create />}
             {section === "changing" && <Changing />}
             {section === "using" && <Using />}
+            {section === "emails" && <Emails />}
+            {section === "unencrypted" && <Unencrypted />}
+            {section === "else" && <Else />}
           </Col>
         </Row>
       </Container>

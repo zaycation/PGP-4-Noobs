@@ -14,4 +14,9 @@
       -ms-flex-align: start;
           align-items: flex-start;
 }
+
+h6:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
 /*# sourceMappingURL=HomeScreen.css.map */
