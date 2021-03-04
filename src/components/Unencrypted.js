@@ -1,4 +1,7 @@
 import React from "react";
+import { Image } from "react-bootstrap";
+import pgp from "./pgptrayicon.gif";
+
 
 const Unencrypted = () => {
   return (
@@ -27,10 +30,11 @@ const Unencrypted = () => {
         <ol>
           <li>
             After you have finished writing your message or e-mail, right click
-            on the PGPtray icon PGPtray icon in the lower right corner of your
-            screen, then in the pop up menu choose Current Window/Sign. The
-            message is fed into a routine called a HASH Function (a function
-            that converts one string of characters into a fixed length string).
+            on the PGPtray icon PGPtray icon <Image src={pgp} roundedCircle />;
+            in the lower right corner of your screen, then in the pop up menu
+            choose Current Window/Sign. The message is fed into a routine called
+            a HASH Function (a function that converts one string of characters
+            into a fixed length string).
           </li>
           <li>
             You will be prompted to enter your Passphrase (unless you have

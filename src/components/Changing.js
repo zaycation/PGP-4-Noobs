@@ -1,4 +1,6 @@
 import React from "react";
+import { Image } from "react-bootstrap";
+import pgp from "./pgptrayicon.gif";
 
 const Changing = () => {
   return (
@@ -15,8 +17,9 @@ const Changing = () => {
       <ol>
         <li>
           Open PGPkeys by selecting Start/Programs/PGP/PGPkeys or by clicking
-          again on the PGPtray icon PGPtray icon in the lower right corner of
-          your screen and selecting PGPkeys in the pop up menu.
+          again on the PGPtray icon <Image src={pgp} roundedCircle /> PGPtray
+          icon in the lower right corner of your screen and selecting PGPkeys in
+          the pop up menu.
         </li>
         <li>
           Highlight the key you want to change the passphrase for, then from the

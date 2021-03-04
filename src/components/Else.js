@@ -1,4 +1,7 @@
 import React from "react";
+import { Image } from "react-bootstrap";
+import pgp from "./pgptrayicon.gif";
+<Image src={pgp} roundedCircle />;
 
 const Else = () => {
   return (
@@ -76,8 +79,9 @@ const Else = () => {
         <ol>
           <li>
             Open PGPkeys by selecting Start/Programs/PGP/PGPkeys or by clicking
-            on the PGPtray icon PGPtray icon in the lower right corner of your
-            screen and selecting PGPkeys in the pop up menu.
+            on the PGPtray icon <Image src={pgp} roundedCircle /> PGPtray icon
+            in the lower right corner of your screen and selecting PGPkeys in
+            the pop up menu.
           </li>
           <li>
             In the list of keys in the PGPkeys window, right click on the key

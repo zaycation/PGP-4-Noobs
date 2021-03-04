@@ -153,23 +153,26 @@ const HomeScreen = () => {
           </Col>
           <Col sm={12} md={9}>
             <div className="right__section">
-
-            <br />
-            <h3 className="my-5">PGP 4 Noobs</h3>
-            {/*section === "toc" && <Toc />*/}
-            {section === "intro" && <Intro />}
-            {section === "history" && <History />}
-            {section === "install" && <Install />}
-            {section === "create" && <Create />}
-            {section === "changing" && <Changing />}
-            {section === "using" && <Using />}
-            {section === "emails" && <Emails />}
-            {section === "unencrypted" && <Unencrypted />}
-            {section === "else" && <Else />}
-            {section === "personal" && <Personal />}
-            {section === "wipe" && <Wipe />}
-            {section === "options" && <Options />}
-            {section === "ack" && <Acknowledgements />}
+              <br />
+              <h3 className="my-5">PGP 4 Noobs</h3>
+              <p>
+                Click any of the sections in the Table of Contents to get
+                started u noob!
+              </p>
+              {/*section === "toc" && <Toc />*/}
+              {section === "intro" && <Intro />}
+              {section === "history" && <History />}
+              {section === "install" && <Install />}
+              {section === "create" && <Create />}
+              {section === "changing" && <Changing />}
+              {section === "using" && <Using />}
+              {section === "emails" && <Emails />}
+              {section === "unencrypted" && <Unencrypted />}
+              {section === "else" && <Else />}
+              {section === "personal" && <Personal />}
+              {section === "wipe" && <Wipe />}
+              {section === "options" && <Options />}
+              {section === "ack" && <Acknowledgements />}
             </div>
           </Col>
         </Row>

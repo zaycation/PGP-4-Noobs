@@ -1,4 +1,6 @@
 import React from "react";
+import { Image } from "react-bootstrap";
+import pgp from "./pgptrayicon.gif";
 
 const Create = () => {
   return (
@@ -18,8 +20,9 @@ const Create = () => {
       <ol>
         <li>
           Open PGPkeys by selecting Start/Programs/PGP/PGPkeys or by clicking on
-          the PGPtray icon PGPtray icon in the lower right corner of your screen
-          and selecting PGPkeys in the pop up menu.
+          the PGPtray icon PGPtray icon <Image src={pgp} roundedCircle /> in the
+          lower right corner of your screen and selecting PGPkeys in the pop up
+          menu.
         </li>
         <li>
           The PGPkeys window opens up, listing various people's Public Keys,
